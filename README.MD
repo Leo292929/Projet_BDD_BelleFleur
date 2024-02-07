@@ -1,7 +1,7 @@
 
 FOUGEROUD Léo
 
-#Application de gestion de stock et de commande et de suivi de client pour le magasin BelleFleur
+# Application de gestion de stock et de commande et de suivi de client pour le magasin BelleFleur
 
 Le projet se présente sous la forme d’un code SQL se chargeant de la construction des classes et de leurs peuplements pour les exemples et d’un code en C# qui sert à gérer l’interface et la base de données.
 
@@ -43,8 +43,11 @@ Ces tables sont interconnectées à l'aide de clés primaires et de clés étran
 
 
 Le code **C#** permet : 
+
 De se connecter ou de se créer un compte ; sachant que l’administrateur (le patron) dispose d’un compte prédéfini avec l’id -2 (mail = mdp = root), qui lui permet de consulter les stocks (si le nombre d’un item est en dessous de 10 l’item est affiché en rouge), les stats et les commandes et de modifier l’état des commandes et les stocks. De même les employés ont aussi leurs comptes avec l’id -3(mail = mdp = bozo), ils disposent des mêmes fonctionnalités que l’administrateur avec la vision des statistiques en moins.
+
 De plus l’administrateur peut exporter en XML les clients ayant commandé au cours des 6 dernier mois.
+
 Pour un client classique : soit il se connecte via son email et son mot de passe soit il créer un nouveau compte (qui nécessite un email non utilisé) et il sera dans ce cas connecté automatiquement.
 Il peut ensuite consulter les commandes qu’il a déjà passé ou en passer une nouvelle.
 S’il choisit d’en faire une nouvelle, il rentre d’abord son adresse et la date de livraison souhaitée (attention au format de la date).
